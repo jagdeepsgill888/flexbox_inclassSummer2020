@@ -1,5 +1,7 @@
+/* mobile first rules */
 body {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px; /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
 }
 
 .container {
@@ -19,5 +21,26 @@ body {
   text-align: center;
    margin: 10px;
    width: 100px;
+   font-size: 1em;
+   /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
+}
+/*handling mobile @landscape size */
+@media screen and (min-width: 480px) {
+.box {
+  background-color: red;
+  color: #fefefe;
+  width: 150px;
+ }
+
+}
+
+/*handling tablet @portrait size */
+@media screen and (min-width: 768px) {
+  .box {
+    background-color: red;
+    color: #fefefe;
+    width: 150px;
+    font-size: 3em;
+   }
 
 }
