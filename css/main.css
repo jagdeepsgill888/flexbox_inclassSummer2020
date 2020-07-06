@@ -28,6 +28,22 @@ body {
    font-size: 1em;
    /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
 }
+
+.box1 {
+  order: 15;
+}
+
+.box4 {
+  order: -1;
+}
+
+.box2 {
+  order: 16;
+}
+
+.box3 {
+  order: 2;
+}
 /*handling mobile @landscape size */
 @media screen and (min-width: 480px) {
 .box {
