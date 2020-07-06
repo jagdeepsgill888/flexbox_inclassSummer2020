@@ -13,7 +13,7 @@ body {
   background-color: #efefef;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;     /*will stay on 1 line */
+  flex-wrap: wrap;     /*will stay on 1 line */
   max-width: 1200px;
 }
 
@@ -27,6 +27,7 @@ body {
    width: 150px;  /*was 100px; */
    font-size: 1em;
    /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
+   flex-grow: 1;
 }
 
 .box1 {
@@ -39,6 +40,7 @@ body {
 
 .box2 {
   order: 16;
+  flex-grow: 2;
 }
 
 .box3 {
