@@ -29,6 +29,7 @@ body {
    /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
    flex-grow: 1;
    flex-shrink: 1;
+   flex-basis: 150px;
 
 }
 
