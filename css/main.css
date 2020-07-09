@@ -48,4 +48,9 @@ body {
     flex: 0 1 220px;
     margin-left:10px;
   }
+
+  #products {
+    display: flex;
+    flex-direction: row;
+   }
 }
