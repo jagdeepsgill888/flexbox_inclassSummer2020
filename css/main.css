@@ -11,9 +11,6 @@ body {
 .container {
   margin: 0 auto;
   background-color: #efefef;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;     /*will stay on 1 line */
   max-width: 1200px;
 }
 
@@ -24,48 +21,31 @@ body {
   padding: 20px;
   text-align: center;
    margin: 10px;
-   width: 150px;  /*was 100px; */
-   font-size: 1em;
-   /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
-   flex-grow: 1;
-   flex-shrink: 1;
-   flex-basis: 150px;
-
 }
 
-.box1 {
-  order: 15;
+.logo {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.box4 {
-  order: -1;
-}
+@media screen and (min-width: 600px) {
+  #main-header {
+    display: flex;
+    flex-direction: row;
+  }
 
-.box2 {
-  order: 16;
-  flex-shrink: 2;
-}
-
-.box3 {
-  order: 2;
-}
-/*handling mobile @landscape size */
-@media screen and (min-width: 480px) {
-.box {
-  background-color: red;
-  color: #fefefe;
-  width: 150px;
- }
-
-}
-
-/*handling tablet @portrait size */
-@media screen and (min-width: 768px) {
   .box {
-    background-color: red;
-    color: #fefefe;
-    width: 150px;
-    font-size: 3em;
-   }
+    flex: 1 1 auto;  /* grown , shrink and basis  */
+  }
 
+  .nav {
+    flex: 0 1 600px;
+  }
+
+  .logo {
+    order: -1;
+    flex: 0 1 220px;
+    margin-left:10px;
+  }
 }
